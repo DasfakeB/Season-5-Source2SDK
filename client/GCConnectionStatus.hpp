@@ -1,0 +1,28 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+
+// /////////////////////////////////////////////////////////////
+// Module: client
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace client
+    {
+        // Enumerator count: 5
+        // Alignment: 4
+        // Size: 0x4
+        enum class GCConnectionStatus : std::uint32_t
+        {
+            GCConnectionStatus_HAVE_SESSION = 0x0,
+            GCConnectionStatus_GC_GOING_DOWN = 0x1,
+            GCConnectionStatus_NO_SESSION = 0x2,
+            GCConnectionStatus_NO_SESSION_IN_LOGON_QUEUE = 0x3,
+            GCConnectionStatus_NO_STEAM = 0x4,
+        };
+    };
+};
