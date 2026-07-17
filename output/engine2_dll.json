@@ -1,0 +1,832 @@
+{
+  "classes": {
+    "CEmptyEntityInstance": {
+      "fields": {},
+      "parent": ""
+    },
+    "CEntityAttributeTable": {
+      "fields": {
+        "m_Attributes": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlOrderedMap<CUtlStringTokenNoRegistration,Attribute_t>"
+        },
+        "m_Names": {
+          "offset": 40,
+          "static": false,
+          "type": "CUtlOrderedMap<CUtlStringTokenNoRegistration,CUtlString>"
+        }
+      },
+      "parent": ""
+    },
+    "CEntityComponent": {
+      "fields": {},
+      "parent": ""
+    },
+    "CEntityComponentHelper": {
+      "fields": {
+        "m_flags": {
+          "offset": 8,
+          "static": false,
+          "type": "uint32"
+        },
+        "m_nPriority": {
+          "offset": 24,
+          "static": false,
+          "type": "int32"
+        },
+        "m_pInfo": {
+          "offset": 16,
+          "static": false,
+          "type": "EntComponentInfo_t*"
+        },
+        "m_pNext": {
+          "offset": 32,
+          "static": false,
+          "type": "CEntityComponentHelper*"
+        }
+      },
+      "parent": ""
+    },
+    "CEntityIOOutput": {
+      "fields": {},
+      "parent": ""
+    },
+    "CEntityIdentity": {
+      "fields": {
+        "m_PathIndex": {
+          "offset": 64,
+          "static": false,
+          "type": "ChangeAccessorFieldPathIndex_t"
+        },
+        "m_designerName": {
+          "offset": 32,
+          "static": false,
+          "type": "CUtlSymbolLarge"
+        },
+        "m_fDataObjectTypes": {
+          "offset": 60,
+          "static": false,
+          "type": "uint32"
+        },
+        "m_flags": {
+          "offset": 48,
+          "static": false,
+          "type": "uint32"
+        },
+        "m_name": {
+          "offset": 24,
+          "static": false,
+          "type": "CUtlSymbolLarge"
+        },
+        "m_nameStringTableIndex": {
+          "offset": 20,
+          "static": false,
+          "type": "int32"
+        },
+        "m_pAttributes": {
+          "offset": 72,
+          "static": false,
+          "type": "CEntityAttributeTable*"
+        },
+        "m_pNext": {
+          "offset": 88,
+          "static": false,
+          "type": "CEntityIdentity*"
+        },
+        "m_pNextByClass": {
+          "offset": 104,
+          "static": false,
+          "type": "CEntityIdentity*"
+        },
+        "m_pPrev": {
+          "offset": 80,
+          "static": false,
+          "type": "CEntityIdentity*"
+        },
+        "m_pPrevByClass": {
+          "offset": 96,
+          "static": false,
+          "type": "CEntityIdentity*"
+        },
+        "m_worldGroupId": {
+          "offset": 56,
+          "static": false,
+          "type": "WorldGroupId_t"
+        }
+      },
+      "parent": ""
+    },
+    "CEntityInstance": {
+      "fields": {
+        "m_CScriptComponent": {
+          "offset": 40,
+          "static": false,
+          "type": "CScriptComponent*"
+        },
+        "m_iszPrivateVScripts": {
+          "offset": 8,
+          "static": false,
+          "type": "CUtlSymbolLarge"
+        },
+        "m_pEntity": {
+          "offset": 16,
+          "static": false,
+          "type": "CEntityIdentity*"
+        }
+      },
+      "parent": ""
+    },
+    "CEntityKeyValues": {
+      "fields": {},
+      "parent": ""
+    },
+    "CNetworkVarChainer": {
+      "fields": {
+        "m_PathIndex": {
+          "offset": 32,
+          "static": false,
+          "type": "ChangeAccessorFieldPathIndex_t"
+        }
+      },
+      "parent": ""
+    },
+    "CScriptComponent": {
+      "fields": {
+        "m_scriptClassName": {
+          "offset": 48,
+          "static": false,
+          "type": "CUtlSymbolLarge"
+        }
+      },
+      "parent": "CEntityComponent"
+    },
+    "CVariantDefaultAllocator": {
+      "fields": {},
+      "parent": ""
+    },
+    "EngineLoopState_t": {
+      "fields": {
+        "m_nPlatWindowHeight": {
+          "offset": 28,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nPlatWindowWidth": {
+          "offset": 24,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nRenderHeight": {
+          "offset": 36,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nRenderWidth": {
+          "offset": 32,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "EntComponentInfo_t": {
+      "fields": {
+        "m_nFlags": {
+          "offset": 36,
+          "static": false,
+          "type": "uint32"
+        },
+        "m_nRuntimeIndex": {
+          "offset": 32,
+          "static": false,
+          "type": "int32"
+        },
+        "m_pBaseClassComponentHelper": {
+          "offset": 96,
+          "static": false,
+          "type": "CEntityComponentHelper*"
+        },
+        "m_pCPPClassname": {
+          "offset": 8,
+          "static": false,
+          "type": "char*"
+        },
+        "m_pName": {
+          "offset": 0,
+          "static": false,
+          "type": "char*"
+        },
+        "m_pNetworkDataReferencedDescription": {
+          "offset": 16,
+          "static": false,
+          "type": "char*"
+        },
+        "m_pNetworkDataReferencedPtrPropDescription": {
+          "offset": 24,
+          "static": false,
+          "type": "char*"
+        }
+      },
+      "parent": ""
+    },
+    "EntInput_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EntityIOQueuePrioritizedEvent_t": {
+      "fields": {
+        "m_flFireTime": {
+          "offset": 4,
+          "static": false,
+          "type": "GameTime_t"
+        },
+        "m_hActivator": {
+          "offset": 32,
+          "static": false,
+          "type": "CEntityHandle"
+        },
+        "m_hCaller": {
+          "offset": 36,
+          "static": false,
+          "type": "CEntityHandle"
+        },
+        "m_hEntTarget": {
+          "offset": 40,
+          "static": false,
+          "type": "CEntityHandle"
+        },
+        "m_pTarget": {
+          "offset": 16,
+          "static": false,
+          "type": "CUtlSymbolLarge"
+        },
+        "m_pTargetInput": {
+          "offset": 24,
+          "static": false,
+          "type": "CUtlSymbolLarge"
+        },
+        "m_targetType": {
+          "offset": 8,
+          "static": false,
+          "type": "EntityIOTargetType_t"
+        },
+        "m_variantValue": {
+          "offset": 48,
+          "static": false,
+          "type": "CVariantBase<CVariantDefaultAllocator>"
+        }
+      },
+      "parent": ""
+    },
+    "EventAdvanceTick_t": {
+      "fields": {
+        "m_nCurrentTick": {
+          "offset": 48,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nCurrentTickThisFrame": {
+          "offset": 52,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nTotalTicks": {
+          "offset": 60,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nTotalTicksThisFrame": {
+          "offset": 56,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "EventAppShutdown_t": {
+      "fields": {
+        "m_nDummy0": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "EventBugBugComplete_t": {
+      "fields": {
+        "m_pPayload": {
+          "offset": 0,
+          "static": false,
+          "type": "EventBugBug_t*"
+        }
+      },
+      "parent": ""
+    },
+    "EventBugBug_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventClientAdvanceNonRenderedFrame_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventClientAdvanceTick_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventClientFrameSimulate_t": {
+      "fields": {
+        "m_LoopState": {
+          "offset": 0,
+          "static": false,
+          "type": "EngineLoopState_t"
+        },
+        "m_bScheduleSendTickPacket": {
+          "offset": 48,
+          "static": false,
+          "type": "bool"
+        },
+        "m_flFrameTime": {
+          "offset": 44,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flRealTime": {
+          "offset": 40,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "EventClientOutput_t": {
+      "fields": {
+        "m_LoopState": {
+          "offset": 0,
+          "static": false,
+          "type": "EngineLoopState_t"
+        },
+        "m_bRenderOnly": {
+          "offset": 52,
+          "static": false,
+          "type": "bool"
+        },
+        "m_flRealTime": {
+          "offset": 44,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flRenderFrameTimeUnbounded": {
+          "offset": 48,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flRenderTime": {
+          "offset": 40,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "EventClientPauseSimulate_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventClientPollInput_t": {
+      "fields": {
+        "m_LoopState": {
+          "offset": 0,
+          "static": false,
+          "type": "EngineLoopState_t"
+        },
+        "m_flRealTime": {
+          "offset": 40,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "EventClientPollNetworking_t": {
+      "fields": {
+        "m_nTickCount": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "EventClientPostAdvanceTick_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventClientPostOutput_t": {
+      "fields": {
+        "m_LoopState": {
+          "offset": 0,
+          "static": false,
+          "type": "EngineLoopState_t"
+        },
+        "m_bRenderOnly": {
+          "offset": 56,
+          "static": false,
+          "type": "bool"
+        },
+        "m_flRenderFrameTime": {
+          "offset": 48,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flRenderFrameTimeUnbounded": {
+          "offset": 52,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flRenderTime": {
+          "offset": 40,
+          "static": false,
+          "type": "float64"
+        }
+      },
+      "parent": ""
+    },
+    "EventClientPostSimulate_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventClientPreOutputParallelWithServer_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventClientPreOutput_t": {
+      "fields": {
+        "m_LoopState": {
+          "offset": 0,
+          "static": false,
+          "type": "EngineLoopState_t"
+        },
+        "m_bRenderOnly": {
+          "offset": 68,
+          "static": false,
+          "type": "bool"
+        },
+        "m_flRealTime": {
+          "offset": 64,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flRenderFrameTime": {
+          "offset": 48,
+          "static": false,
+          "type": "float64"
+        },
+        "m_flRenderFrameTimeUnbounded": {
+          "offset": 56,
+          "static": false,
+          "type": "float64"
+        },
+        "m_flRenderTime": {
+          "offset": 40,
+          "static": false,
+          "type": "float64"
+        }
+      },
+      "parent": ""
+    },
+    "EventClientPreSimulate_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventClientProcessGameInput_t": {
+      "fields": {
+        "m_LoopState": {
+          "offset": 0,
+          "static": false,
+          "type": "EngineLoopState_t"
+        },
+        "m_flFrameTime": {
+          "offset": 44,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flRealTime": {
+          "offset": 40,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "EventClientProcessInput_t": {
+      "fields": {
+        "m_LoopState": {
+          "offset": 0,
+          "static": false,
+          "type": "EngineLoopState_t"
+        },
+        "m_flRealTime": {
+          "offset": 40,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flTickInterval": {
+          "offset": 44,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flTickStartTime": {
+          "offset": 48,
+          "static": false,
+          "type": "float64"
+        }
+      },
+      "parent": ""
+    },
+    "EventClientProcessNetworking_t": {
+      "fields": {
+        "m_nTickCount": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "EventClientSceneSystemThreadStateChange_t": {
+      "fields": {
+        "m_bThreadsActive": {
+          "offset": 0,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "EventClientSimulate_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventFrameBoundary_t": {
+      "fields": {
+        "m_flFrameTime": {
+          "offset": 0,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "EventModInitialized_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventPostAdvanceTick_t": {
+      "fields": {
+        "m_nCurrentTick": {
+          "offset": 48,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nCurrentTickThisFrame": {
+          "offset": 52,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nTotalTicks": {
+          "offset": 60,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nTotalTicksThisFrame": {
+          "offset": 56,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "EventPostDataUpdate_t": {
+      "fields": {
+        "m_nCount": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "EventPreDataUpdate_t": {
+      "fields": {
+        "m_nCount": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "EventProfileStorageAvailable_t": {
+      "fields": {
+        "m_nSplitScreenSlot": {
+          "offset": 0,
+          "static": false,
+          "type": "CSplitScreenSlot"
+        }
+      },
+      "parent": ""
+    },
+    "EventServerAdvanceTick_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventServerBeginAsyncPostTickWork_t": {
+      "fields": {
+        "m_bIsOncePerFrameAsyncWorkPhase": {
+          "offset": 0,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "EventServerBeginSimulate_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventServerEndAsyncPostTickWork_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventServerEndSimulate_t": {
+      "fields": {
+        "m_bLastTick": {
+          "offset": 0,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "EventServerPollNetworking_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventServerPostAdvanceTick_t": {
+      "fields": {
+        "m_bLastTickBeforeClientUpdate": {
+          "offset": 64,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "EventServerPostSimulate_t": {
+      "fields": {
+        "m_bLastTickBeforeClientUpdate": {
+          "offset": 48,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "EventServerProcessNetworking_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "EventSetTime_t": {
+      "fields": {
+        "m_LoopState": {
+          "offset": 0,
+          "static": false,
+          "type": "EngineLoopState_t"
+        },
+        "m_flRealTime": {
+          "offset": 48,
+          "static": false,
+          "type": "float64"
+        },
+        "m_flRenderFrameTime": {
+          "offset": 64,
+          "static": false,
+          "type": "float64"
+        },
+        "m_flRenderFrameTimeUnbounded": {
+          "offset": 72,
+          "static": false,
+          "type": "float64"
+        },
+        "m_flRenderFrameTimeUnscaled": {
+          "offset": 80,
+          "static": false,
+          "type": "float64"
+        },
+        "m_flRenderTime": {
+          "offset": 56,
+          "static": false,
+          "type": "float64"
+        },
+        "m_flTickRemainder": {
+          "offset": 88,
+          "static": false,
+          "type": "float64"
+        },
+        "m_nClientOutputFrames": {
+          "offset": 40,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "EventSimpleLoopFrameUpdate_t": {
+      "fields": {
+        "m_LoopState": {
+          "offset": 0,
+          "static": false,
+          "type": "EngineLoopState_t"
+        },
+        "m_flFrameTime": {
+          "offset": 44,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flRealTime": {
+          "offset": 40,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "EventSimulate_t": {
+      "fields": {
+        "m_LoopState": {
+          "offset": 0,
+          "static": false,
+          "type": "EngineLoopState_t"
+        },
+        "m_bFirstTick": {
+          "offset": 40,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bLastTick": {
+          "offset": 41,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "EventSplitScreenStateChanged_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "GameTick_t": {
+      "fields": {
+        "m_Value": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "GameTime_t": {
+      "fields": {
+        "m_Value": {
+          "offset": 0,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    }
+  },
+  "enums": {
+    "EntityDormancyType_t": {
+      "alignment": 4,
+      "members": {
+        "ENTITY_DORMANT": 1,
+        "ENTITY_NOT_DORMANT": 0,
+        "ENTITY_SUSPENDED": 2
+      }
+    },
+    "EntityIOTargetType_t": {
+      "alignment": 4,
+      "members": {
+        "ENTITY_IO_TARGET_EHANDLE": 6,
+        "ENTITY_IO_TARGET_ENTITYNAME": 2,
+        "ENTITY_IO_TARGET_ENTITYNAME_OR_CLASSNAME": 7,
+        "ENTITY_IO_TARGET_INVALID": -1
+      }
+    }
+  },
+  "module": "engine2.dll"
+}

@@ -1,0 +1,1230 @@
+{
+  "Animation_Pose": {
+    "CBaseAnimGraph_m_pMainGraphController": {
+      "mined": false,
+      "note": "schema — modern anim graph (not classic layers)",
+      "offset": 4168
+    },
+    "PhysicsRagdollPose_m_Transforms": {
+      "mined": false,
+      "note": "relative",
+      "offset": 8
+    },
+    "m_RagdollPose": {
+      "mined": false,
+      "note": "PhysicsRagdollPose_t",
+      "offset": 4304
+    },
+    "m_bAnimGraphUpdateEnabled": {
+      "mined": false,
+      "note": "bool",
+      "offset": 4248
+    },
+    "m_bRagdollClientSide": {
+      "mined": false,
+      "note": "bool",
+      "offset": 4377
+    },
+    "m_nForceBone": {
+      "mined": false,
+      "note": "int32",
+      "offset": 4264
+    },
+    "note": {
+      "mined": false,
+      "note": "CS2 uses AnimGraph — no classic CAnimationLayer array; use graph + bones",
+      "offset": 0
+    }
+  },
+  "BoneMatrixPath": {
+    "BONE_head": {
+      "mined": false,
+      "note": "index",
+      "offset": 7
+    },
+    "BONE_l_elbow": {
+      "mined": false,
+      "note": "index",
+      "offset": 10
+    },
+    "BONE_l_foot": {
+      "mined": false,
+      "note": "index",
+      "offset": 19
+    },
+    "BONE_l_hand": {
+      "mined": false,
+      "note": "index",
+      "offset": 11
+    },
+    "BONE_l_hip": {
+      "mined": false,
+      "note": "index",
+      "offset": 17
+    },
+    "BONE_l_knee": {
+      "mined": false,
+      "note": "index",
+      "offset": 18
+    },
+    "BONE_l_shoulder": {
+      "mined": false,
+      "note": "index",
+      "offset": 9
+    },
+    "BONE_neck": {
+      "mined": false,
+      "note": "index",
+      "offset": 6
+    },
+    "BONE_pelvis": {
+      "mined": false,
+      "note": "index",
+      "offset": 1
+    },
+    "BONE_r_elbow": {
+      "mined": false,
+      "note": "index",
+      "offset": 14
+    },
+    "BONE_r_foot": {
+      "mined": false,
+      "note": "index",
+      "offset": 22
+    },
+    "BONE_r_hand": {
+      "mined": false,
+      "note": "index",
+      "offset": 15
+    },
+    "BONE_r_hip": {
+      "mined": false,
+      "note": "index",
+      "offset": 20
+    },
+    "BONE_r_knee": {
+      "mined": false,
+      "note": "index",
+      "offset": 21
+    },
+    "BONE_r_shoulder": {
+      "mined": false,
+      "note": "index",
+      "offset": 16
+    },
+    "BONE_spine_upper": {
+      "mined": false,
+      "note": "index",
+      "offset": 4
+    },
+    "CModelState_boneArray": {
+      "mined": false,
+      "note": "NOT schema — community-stable bone matrix ptr",
+      "offset": 128
+    },
+    "CModelState_m_hModel": {
+      "mined": false,
+      "note": "schema anchor (bones live below this)",
+      "offset": 160
+    },
+    "body_m_skeletonInstance": {
+      "mined": false,
+      "note": "EMBEDDED CSkeletonInstance",
+      "offset": 128
+    },
+    "body_to_modelState": {
+      "mined": false,
+      "note": "0x80+0x140 convenience",
+      "offset": 448
+    },
+    "bone_matrix_stride": {
+      "mined": false,
+      "note": "bytes per bone (matrix3x4_t)",
+      "offset": 32
+    },
+    "pawn_m_CBodyComponent": {
+      "mined": false,
+      "note": "schema pointer",
+      "offset": 48
+    },
+    "pawn_m_pGameSceneNode": {
+      "mined": false,
+      "note": "schema — CSkeletonInstance* often",
+      "offset": 816
+    },
+    "skel_m_modelState": {
+      "mined": false,
+      "note": "EMBEDDED CModelState",
+      "offset": 320
+    },
+    "skel_m_nHitboxSet": {
+      "mined": false,
+      "note": "schema CSkeletonInstance",
+      "offset": 1020
+    }
+  },
+  "CBaseUserCmdPB": {
+    "flForwardMove": {
+      "mined": false,
+      "note": "float",
+      "offset": 88
+    },
+    "flSideMove": {
+      "mined": false,
+      "note": "float",
+      "offset": 92
+    },
+    "flUpMove": {
+      "mined": false,
+      "note": "float",
+      "offset": 96
+    },
+    "nCachedBits": {
+      "mined": false,
+      "note": "int64 — Bhop sets bit 0x2 when mutating buttons",
+      "offset": 16
+    },
+    "nClientTick": {
+      "mined": false,
+      "note": "int32",
+      "offset": 84
+    },
+    "nCmdFlags": {
+      "mined": false,
+      "note": "int32",
+      "offset": 128
+    },
+    "nConsumedServerAngleChanges": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 124
+    },
+    "nHasBits": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 8
+    },
+    "nImpulse": {
+      "mined": false,
+      "note": "int32",
+      "offset": 100
+    },
+    "nLegacyCommandNumber": {
+      "mined": false,
+      "note": "int32",
+      "offset": 80
+    },
+    "nMousedX": {
+      "mined": false,
+      "note": "int32",
+      "offset": 112
+    },
+    "nMousedY": {
+      "mined": false,
+      "note": "int32",
+      "offset": 116
+    },
+    "nPawnEntityHandle": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 132
+    },
+    "nPredictionOffsetTicksX256": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 120
+    },
+    "nRandomSeed": {
+      "mined": false,
+      "note": "int32",
+      "offset": 108
+    },
+    "nSubtickCapacity": {
+      "mined": false,
+      "note": "int32",
+      "offset": 36
+    },
+    "nSubtickCurrentSize": {
+      "mined": false,
+      "note": "int32 — RepeatedPtrField count",
+      "offset": 32
+    },
+    "nWeaponSelect": {
+      "mined": false,
+      "note": "int32",
+      "offset": 104
+    },
+    "pExecutionNotes": {
+      "mined": false,
+      "note": "void*",
+      "offset": 72
+    },
+    "pInButtonState": {
+      "mined": false,
+      "note": "CInButtonStatePB*",
+      "offset": 56
+    },
+    "pMoveCrc": {
+      "mined": false,
+      "note": "std::string*",
+      "offset": 48
+    },
+    "pSubtickContainer": {
+      "mined": false,
+      "note": "CSubtickMoveStep** / elements ptr",
+      "offset": 40
+    },
+    "pSubtickMoves": {
+      "mined": false,
+      "note": "start of inline RepeatedPtrField (24 bytes)",
+      "offset": 24
+    },
+    "pViewAngles": {
+      "mined": false,
+      "note": "CMsgQAngle*",
+      "offset": 64
+    },
+    "sizeof": {
+      "mined": false,
+      "note": "bytes",
+      "offset": 136
+    },
+    "vtable": {
+      "mined": false,
+      "note": "void*",
+      "offset": 0
+    }
+  },
+  "CCSGOInput": {
+    "bInThirdPerson": {
+      "mined": false,
+      "note": "slotBase+1 (bool)",
+      "offset": 553
+    },
+    "thirdPersonAngles": {
+      "mined": false,
+      "note": "QAngle near thirdperson slot",
+      "offset": 560
+    },
+    "thirdPersonSlotBase": {
+      "mined": false,
+      "note": "lea rdi,[rcx+0x228] in ThirdPersonReset",
+      "offset": 552
+    },
+    "thirdPersonSlotStride": {
+      "mined": false,
+      "note": "imul rax,rbx,0x928 per player slot",
+      "offset": 2344
+    },
+    "viewAngles_field": {
+      "mined": false,
+      "note": "from dwViewAngles_field pattern (dwCSGOInput embed + field)",
+      "offset": 1672
+    },
+    "vt_handle_camera_angles": {
+      "mined": false,
+      "note": "vtable index — AntiAim AllowCameraAngleChange",
+      "offset": 8
+    }
+  },
+  "CCSGOUserCmdPB": {
+    "nCachedSize": {
+      "mined": false,
+      "note": "uint64",
+      "offset": 16
+    },
+    "nHasBits": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 8
+    },
+    "pBaseCmd": {
+      "mined": false,
+      "note": "CBaseUserCmdPB*",
+      "offset": 48
+    },
+    "sizeof": {
+      "mined": false,
+      "note": "bytes",
+      "offset": 72
+    },
+    "vtable": {
+      "mined": false,
+      "note": "void*",
+      "offset": 0
+    }
+  },
+  "CCollisionProperty": {
+    "BaseModel_m_CHitboxComponent": {
+      "mined": false,
+      "note": "CHitboxComponent",
+      "offset": 2808
+    },
+    "BaseModel_m_Collision": {
+      "mined": false,
+      "note": "embedded on C_BaseModelEntity",
+      "offset": 3368
+    },
+    "m_CollisionGroup": {
+      "mined": false,
+      "note": "uint8",
+      "offset": 94
+    },
+    "m_collisionAttribute": {
+      "mined": false,
+      "note": "VPhysicsCollisionAttribute_t",
+      "offset": 16
+    },
+    "m_flBoundingRadius": {
+      "mined": false,
+      "note": "float",
+      "offset": 96
+    },
+    "m_flCapsuleRadius": {
+      "mined": false,
+      "note": "float",
+      "offset": 172
+    },
+    "m_nSolidType": {
+      "mined": false,
+      "note": "SolidType_t",
+      "offset": 91
+    },
+    "m_usSolidFlags": {
+      "mined": false,
+      "note": "uint8",
+      "offset": 90
+    },
+    "m_vecMaxs": {
+      "mined": false,
+      "note": "Vector",
+      "offset": 76
+    },
+    "m_vecMins": {
+      "mined": false,
+      "note": "Vector",
+      "offset": 64
+    },
+    "m_vecSurroundingMaxs": {
+      "mined": false,
+      "note": "Vector",
+      "offset": 124
+    },
+    "m_vecSurroundingMins": {
+      "mined": false,
+      "note": "Vector",
+      "offset": 136
+    }
+  },
+  "CGameEntitySystem": {
+    "EntityHandle_IndexMask": {
+      "mined": false,
+      "note": "handle & 0x1FF = slot in chunk",
+      "offset": 511
+    },
+    "EntityHandle_IndexShift": {
+      "mined": false,
+      "note": "handle >> 9 = chunk index",
+      "offset": 9
+    },
+    "EntityList_Chunks": {
+      "mined": false,
+      "note": "pointer to chunk table (documented)",
+      "offset": 16
+    },
+    "EntityList_EntrySize": {
+      "mined": false,
+      "note": "bytes per entity slot in chunk",
+      "offset": 112
+    },
+    "highestEntityIndex": {
+      "mined": false,
+      "note": "from offset dump / a2x",
+      "offset": 8336
+    }
+  },
+  "CGameSceneNode": {
+    "m_angAbsRotation": {
+      "mined": false,
+      "note": "QAngle",
+      "offset": 212
+    },
+    "m_bDormant": {
+      "mined": false,
+      "note": "bool",
+      "offset": 259
+    },
+    "m_pChild": {
+      "mined": false,
+      "note": "CGameSceneNode* — walk children",
+      "offset": 64
+    },
+    "m_pNextSibling": {
+      "mined": false,
+      "note": "CGameSceneNode* — walk siblings",
+      "offset": 72
+    },
+    "m_pOwner": {
+      "mined": false,
+      "note": "CEntityInstance* — viewmodel backref",
+      "offset": 48
+    },
+    "m_pParent": {
+      "mined": false,
+      "note": "CGameSceneNode*",
+      "offset": 56
+    },
+    "m_vecAbsOrigin": {
+      "mined": false,
+      "note": "Vector — ESP position",
+      "offset": 200
+    },
+    "m_vecOrigin": {
+      "mined": false,
+      "note": "network origin",
+      "offset": 128
+    }
+  },
+  "CGlobalVars": {
+    "m_flClientTickFraction": {
+      "mined": false,
+      "note": "float",
+      "offset": 56
+    },
+    "m_flCurTime": {
+      "mined": false,
+      "note": "float — EnginePrediction verified",
+      "offset": 48
+    },
+    "m_flFrameAdvance": {
+      "mined": false,
+      "note": "float",
+      "offset": 12
+    },
+    "m_flFrameTime": {
+      "mined": false,
+      "note": "float — AbsoluteFrameTime",
+      "offset": 8
+    },
+    "m_flNextTickFraction": {
+      "mined": false,
+      "note": "float",
+      "offset": 60
+    },
+    "m_flRealTime": {
+      "mined": false,
+      "note": "float",
+      "offset": 0
+    },
+    "m_flRenderTime": {
+      "mined": false,
+      "note": "float",
+      "offset": 52
+    },
+    "m_iFrameCount": {
+      "mined": false,
+      "note": "int",
+      "offset": 4
+    },
+    "m_nTickCount": {
+      "mined": false,
+      "note": "int — EnginePrediction verified",
+      "offset": 72
+    },
+    "m_uCurrentMapName": {
+      "mined": false,
+      "note": "char* — CS2_Internal verified",
+      "offset": 392
+    }
+  },
+  "CGlowProperty": {
+    "BaseModel_m_Glow": {
+      "mined": false,
+      "note": "C_BaseModelEntity embedded CGlowProperty",
+      "offset": 3552
+    },
+    "dwGlowManager": {
+      "mined": false,
+      "note": "use offsets::dwGlowManager — global list head",
+      "offset": 0
+    },
+    "m_bEligibleForScreenHighlight": {
+      "mined": false,
+      "note": "bool",
+      "offset": 80
+    },
+    "m_bFlashing": {
+      "mined": false,
+      "note": "bool",
+      "offset": 68
+    },
+    "m_bGlowing": {
+      "mined": false,
+      "note": "bool",
+      "offset": 81
+    },
+    "m_fGlowColor": {
+      "mined": false,
+      "note": "Vector",
+      "offset": 8
+    },
+    "m_flGlowTime": {
+      "mined": false,
+      "note": "float",
+      "offset": 72
+    },
+    "m_glowColorOverride": {
+      "mined": false,
+      "note": "Color RGBA",
+      "offset": 64
+    },
+    "m_iGlowTeam": {
+      "mined": false,
+      "note": "int",
+      "offset": 52
+    },
+    "m_iGlowType": {
+      "mined": false,
+      "note": "int — 0=none 1=outer 2=outline",
+      "offset": 48
+    },
+    "m_nGlowRange": {
+      "mined": false,
+      "note": "int",
+      "offset": 56
+    },
+    "m_nGlowRangeMin": {
+      "mined": false,
+      "note": "int",
+      "offset": 60
+    }
+  },
+  "CInButtonState": {
+    "nValue": {
+      "mined": false,
+      "note": "int64 — buttonstate1",
+      "offset": 8
+    },
+    "nValueChanged": {
+      "mined": false,
+      "note": "int64 — buttonstate2",
+      "offset": 16
+    },
+    "nValueScroll": {
+      "mined": false,
+      "note": "int64 — buttonstate3",
+      "offset": 24
+    },
+    "sizeof": {
+      "mined": false,
+      "note": "bytes",
+      "offset": 32
+    },
+    "vtable": {
+      "mined": false,
+      "note": "void*",
+      "offset": 0
+    }
+  },
+  "CInButtonStatePB": {
+    "buttonstate1": {
+      "mined": false,
+      "note": "uint64 — mirrors CInButtonState.nValue",
+      "offset": 24
+    },
+    "buttonstate2": {
+      "mined": false,
+      "note": "uint64 — changed",
+      "offset": 32
+    },
+    "buttonstate3": {
+      "mined": false,
+      "note": "uint64 — scroll",
+      "offset": 40
+    },
+    "c_base_pb_header": {
+      "mined": false,
+      "note": "size 0x18 — protobuf header",
+      "offset": 0
+    },
+    "nHasBits": {
+      "mined": false,
+      "note": "int32 — Bhop ORs 0x07 when mutating",
+      "offset": 16
+    }
+  },
+  "CMsgQAngle": {
+    "angValue": {
+      "mined": false,
+      "note": "QAngle pitch/yaw/roll — AntiAim writes here",
+      "offset": 24
+    },
+    "base": {
+      "mined": false,
+      "note": "CBasePB*",
+      "offset": 0
+    }
+  },
+  "CNetworkGameClient": {
+    "clientTickCount": {
+      "mined": false,
+      "note": "",
+      "offset": 888
+    },
+    "deltaTick_serverTick": {
+      "mined": false,
+      "note": "shared field (delta/server tick)",
+      "offset": 588
+    },
+    "localPlayer": {
+      "mined": false,
+      "note": "handle — do NOT overwrite in prediction",
+      "offset": 248
+    },
+    "maxClients": {
+      "mined": false,
+      "note": "",
+      "offset": 576
+    },
+    "signOnState": {
+      "mined": false,
+      "note": "also offsets::dwNetworkGameClient_signOnState",
+      "offset": 560
+    }
+  },
+  "CPlayer_MovementServices_VT": {
+    "ResetPredictionCommand": {
+      "mined": false,
+      "note": "vtable index decimal",
+      "offset": 43
+    },
+    "RunCommand": {
+      "mined": false,
+      "note": "vtable index decimal",
+      "offset": 27
+    },
+    "SetPredictionCommand": {
+      "mined": false,
+      "note": "vtable index decimal",
+      "offset": 42
+    },
+    "backup_size": {
+      "mined": false,
+      "note": "bytes copied around RunCommand",
+      "offset": 1504
+    }
+  },
+  "CPrediction": {
+    "FirstPrediction": {
+      "mined": false,
+      "note": "bool — EnginePrediction",
+      "offset": 129
+    },
+    "InPrediction": {
+      "mined": false,
+      "note": "bool — EnginePrediction",
+      "offset": 52
+    }
+  },
+  "CSubtickMoveStep": {
+    "CSUBTICK_BITS_BUTTON": {
+      "mined": false,
+      "note": "nHasBits flag",
+      "offset": 1
+    },
+    "CSUBTICK_BITS_PRESSED": {
+      "mined": false,
+      "note": "nHasBits flag",
+      "offset": 2
+    },
+    "CSUBTICK_BITS_WHEN": {
+      "mined": false,
+      "note": "nHasBits flag",
+      "offset": 4
+    },
+    "bPressed": {
+      "mined": false,
+      "note": "bool",
+      "offset": 32
+    },
+    "flAnalogForwardDelta": {
+      "mined": false,
+      "note": "float",
+      "offset": 40
+    },
+    "flAnalogLeftDelta": {
+      "mined": false,
+      "note": "float",
+      "offset": 44
+    },
+    "flPitchDelta": {
+      "mined": false,
+      "note": "float",
+      "offset": 48
+    },
+    "flWhen": {
+      "mined": false,
+      "note": "float — land frac or 0",
+      "offset": 36
+    },
+    "flYawDelta": {
+      "mined": false,
+      "note": "float",
+      "offset": 52
+    },
+    "nButton": {
+      "mined": false,
+      "note": "uint64 — e.g. IN_JUMP",
+      "offset": 24
+    },
+    "nCachedSize": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 20
+    },
+    "nHasBits": {
+      "mined": false,
+      "note": "uint32 — BUTTON|PRESSED|WHEN",
+      "offset": 16
+    },
+    "pMetadata": {
+      "mined": false,
+      "note": "void*",
+      "offset": 8
+    },
+    "pVtable": {
+      "mined": false,
+      "note": "void*",
+      "offset": 0
+    },
+    "sizeof": {
+      "mined": false,
+      "note": "bytes — CreateNewSubtickMoveStep imm B9 38",
+      "offset": 56
+    }
+  },
+  "CUserCmd": {
+    "cmd_type": {
+      "mined": false,
+      "note": "int32",
+      "offset": 144
+    },
+    "csgoUserCmd": {
+      "mined": false,
+      "note": "CCSGOUserCmdPB embedded (size 0x48)",
+      "offset": 16
+    },
+    "has_been_predicted": {
+      "mined": false,
+      "note": "int32 — EnginePrediction",
+      "offset": 136
+    },
+    "nButtons": {
+      "mined": false,
+      "note": "CInButtonState embedded (size 0x20)",
+      "offset": 88
+    },
+    "pBaseCmd_abs": {
+      "mined": false,
+      "note": "CUserCmd+0x10+0x30 — shortcut to CBaseUserCmdPB*",
+      "offset": 64
+    },
+    "prediction_cmd_type": {
+      "mined": false,
+      "note": "int32",
+      "offset": 140
+    },
+    "prediction_reason": {
+      "mined": false,
+      "note": "int32",
+      "offset": 148
+    },
+    "sequence_number": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 8
+    },
+    "sizeof": {
+      "mined": false,
+      "note": "bytes",
+      "offset": 152
+    },
+    "vftable": {
+      "mined": false,
+      "note": "void*",
+      "offset": 0
+    }
+  },
+  "Camera_FOV": {
+    "CCSPlayerBase_CameraServices_m_iFOV": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 656
+    },
+    "dwViewRender": {
+      "mined": false,
+      "note": "offsets::dwViewRender — CViewRender* global",
+      "offset": 0
+    },
+    "m_flFOVRate": {
+      "mined": false,
+      "note": "float",
+      "offset": 668
+    },
+    "m_flFOVTime": {
+      "mined": false,
+      "note": "GameTime_t",
+      "offset": 664
+    },
+    "m_flLastShotFOV": {
+      "mined": false,
+      "note": "float",
+      "offset": 676
+    },
+    "m_iFOVStart": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 660
+    },
+    "note_ViewSetup": {
+      "mined": false,
+      "note": "FOV prefer CameraServices schema; CViewSetup inside ViewRender shifts often",
+      "offset": 0
+    },
+    "pawn_m_pCameraServices": {
+      "mined": false,
+      "note": "schema C_BasePlayerPawn",
+      "offset": 4672
+    }
+  },
+  "EnginePrediction": {
+    "CPrediction_FirstPrediction": {
+      "mined": false,
+      "note": "bool on dwPrediction object",
+      "offset": 129
+    },
+    "CPrediction_InPrediction": {
+      "mined": false,
+      "note": "bool on dwPrediction object",
+      "offset": 52
+    },
+    "CreateMove_slot_arg": {
+      "mined": false,
+      "note": "CreateMove(this, int slot, CUserCmd*)",
+      "offset": 1
+    },
+    "MS_m_ModernJump": {
+      "mined": false,
+      "note": "CCSPlayer_MovementServices embed",
+      "offset": 1736
+    },
+    "ModernJump_m_flLastLandedFrac": {
+      "mined": false,
+      "note": "relative to CCSPlayerModernJump",
+      "offset": 36
+    },
+    "ModernJump_m_nLastLandedTick": {
+      "mined": false,
+      "note": "relative to CCSPlayerModernJump",
+      "offset": 32
+    },
+    "MovementServices_VT_ResetPredictionCommand": {
+      "mined": false,
+      "note": "vtable index",
+      "offset": 43
+    },
+    "MovementServices_VT_RunCommand": {
+      "mined": false,
+      "note": "vtable index",
+      "offset": 27
+    },
+    "MovementServices_VT_SetPredictionCommand": {
+      "mined": false,
+      "note": "vtable index",
+      "offset": 42
+    },
+    "MovementServices_backup_size": {
+      "mined": false,
+      "note": "bytes — hellcore backup window",
+      "offset": 1504
+    },
+    "controller_m_nTickBase": {
+      "mined": false,
+      "note": "CBasePlayerController",
+      "offset": 1720
+    },
+    "pawn_m_pMovementServices": {
+      "mined": false,
+      "note": "schema C_BasePlayerPawn — also cheat_fields",
+      "offset": 4680
+    }
+  },
+  "InputButtonBits": {
+    "BTN_PB_HASBITS_ALL": {
+      "mined": false,
+      "note": "CInButtonStatePB.nHasBits OR mask",
+      "offset": 7
+    },
+    "CACHED_BITS_BUTTONS": {
+      "mined": false,
+      "note": "CBaseUserCmdPB.nCachedBits when mutating buttons",
+      "offset": 2
+    },
+    "FL_ONGROUND": {
+      "mined": false,
+      "note": "m_fFlags bit 0",
+      "offset": 1
+    },
+    "IN_ATTACK": {
+      "mined": false,
+      "note": "bit",
+      "offset": 1
+    },
+    "IN_ATTACK2": {
+      "mined": false,
+      "note": "bit",
+      "offset": 2048
+    },
+    "IN_BACK": {
+      "mined": false,
+      "note": "bit",
+      "offset": 16
+    },
+    "IN_DUCK": {
+      "mined": false,
+      "note": "bit",
+      "offset": 4
+    },
+    "IN_FORWARD": {
+      "mined": false,
+      "note": "bit — AutoStrafe",
+      "offset": 8
+    },
+    "IN_JUMP": {
+      "mined": false,
+      "note": "bit — Bhop/Subtick",
+      "offset": 2
+    },
+    "IN_MOVELEFT": {
+      "mined": false,
+      "note": "bit",
+      "offset": 512
+    },
+    "IN_MOVERIGHT": {
+      "mined": false,
+      "note": "bit",
+      "offset": 1024
+    },
+    "IN_RELOAD": {
+      "mined": false,
+      "note": "bit",
+      "offset": 8192
+    },
+    "IN_SCORE": {
+      "mined": false,
+      "note": "bit",
+      "offset": 65536
+    },
+    "IN_USE": {
+      "mined": false,
+      "note": "bit",
+      "offset": 32
+    },
+    "MOVETYPE_LADDER": {
+      "mined": false,
+      "note": "enum",
+      "offset": 9
+    },
+    "MOVETYPE_NOCLIP": {
+      "mined": false,
+      "note": "enum",
+      "offset": 8
+    },
+    "MOVETYPE_OBSERVER": {
+      "mined": false,
+      "note": "enum",
+      "offset": 10
+    },
+    "PBITS_FORWARD": {
+      "mined": false,
+      "note": "CBaseUserCmdPB.nHasBits — AutoStrafe",
+      "offset": 64
+    },
+    "PBITS_SIDE": {
+      "mined": false,
+      "note": "CBaseUserCmdPB.nHasBits — AutoStrafe",
+      "offset": 128
+    }
+  },
+  "RepeatedPtrField_Subtick": {
+    "arena_or_pMoves": {
+      "mined": false,
+      "note": "relative to CBaseUserCmdPB+0x18",
+      "offset": 0
+    },
+    "base_on_CBaseUserCmdPB": {
+      "mined": false,
+      "note": "lea rcx,[r14+0x18] before ProtobufAdd",
+      "offset": 24
+    },
+    "capacity": {
+      "mined": false,
+      "note": "rel = abs 0x24",
+      "offset": 12
+    },
+    "current_size": {
+      "mined": false,
+      "note": "rel = abs 0x20 on CBaseUserCmdPB",
+      "offset": 8
+    },
+    "elements": {
+      "mined": false,
+      "note": "rel = abs 0x28 — CSubtickMoveStep**",
+      "offset": 16
+    },
+    "sizeof": {
+      "mined": false,
+      "note": "bytes inline",
+      "offset": 24
+    }
+  },
+  "TraceStructs": {
+    "CGameTrace_bStartSolid": {
+      "mined": false,
+      "note": "bool",
+      "offset": 187
+    },
+    "CGameTrace_fraction": {
+      "mined": false,
+      "note": "float",
+      "offset": 172
+    },
+    "CGameTrace_nSurfaceFlags": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 80
+    },
+    "CGameTrace_pHitBox": {
+      "mined": false,
+      "note": "void*",
+      "offset": 16
+    },
+    "CGameTrace_pHitEntity": {
+      "mined": false,
+      "note": "void*",
+      "offset": 8
+    },
+    "CGameTrace_sizeof": {
+      "mined": false,
+      "note": "common assert size",
+      "offset": 264
+    },
+    "CGameTrace_vecEnd": {
+      "mined": false,
+      "note": "Vector",
+      "offset": 132
+    },
+    "CGameTrace_vecNormal": {
+      "mined": false,
+      "note": "Vector",
+      "offset": 144
+    },
+    "CGameTrace_vecStart": {
+      "mined": false,
+      "note": "Vector",
+      "offset": 120
+    },
+    "MASK_VISIBLE_CHECK": {
+      "mined": false,
+      "note": "trace mask",
+      "offset": 1847307
+    },
+    "TraceData_surface_stride": {
+      "mined": false,
+      "note": "autowall handle index stride",
+      "offset": 56
+    },
+    "TraceFilter_t_sizeof": {
+      "mined": false,
+      "note": "Internal Visibility / some use 0x40",
+      "offset": 96
+    }
+  },
+  "Weapon_Econ_VData": {
+    "C_AttributeContainer_m_Item": {
+      "mined": false,
+      "note": "C_EconItemView embed",
+      "offset": 80
+    },
+    "C_EconEntity_m_AttributeManager": {
+      "mined": false,
+      "note": "also cheat_fields",
+      "offset": 4520
+    },
+    "C_EconItemView_m_iItemDefinitionIndex": {
+      "mined": false,
+      "note": "uint16",
+      "offset": 442
+    },
+    "VData_m_WeaponType": {
+      "mined": false,
+      "note": "CCSWeaponBaseVData",
+      "offset": 1312
+    },
+    "VData_m_flRange": {
+      "mined": false,
+      "note": "CCSWeaponBaseVData",
+      "offset": 2104
+    },
+    "VData_m_nDamage": {
+      "mined": false,
+      "note": "CCSWeaponBaseVData — verify via cheat_fields",
+      "offset": 2088
+    },
+    "VData_m_nPrice": {
+      "mined": false,
+      "note": "CCSWeaponBaseVData",
+      "offset": 1804
+    },
+    "m_flFallbackWear": {
+      "mined": false,
+      "note": "float",
+      "offset": 5768
+    },
+    "m_iEntityQuality": {
+      "mined": false,
+      "note": "int32",
+      "offset": 444
+    },
+    "m_iItemIDHigh": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 464
+    },
+    "m_iItemIDLow": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 468
+    },
+    "m_nFallbackPaintKit": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 5760
+    },
+    "m_nFallbackSeed": {
+      "mined": false,
+      "note": "uint32",
+      "offset": 5764
+    },
+    "m_nFallbackStatTrak": {
+      "mined": false,
+      "note": "int32",
+      "offset": 5772
+    },
+    "m_szCustomName": {
+      "mined": false,
+      "note": "char[161]",
+      "offset": 760
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "classes": {
+    "ChangeAccessorFieldPathIndex_t": {
+      "fields": {
+        "m_Value": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    }
+  },
+  "enums": {},
+  "module": "networksystem.dll"
+}

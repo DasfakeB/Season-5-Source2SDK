@@ -1,0 +1,466 @@
+{
+  "classes": {
+    "AABBWS_t": {
+      "fields": {
+        "m_vMaxBounds": {
+          "offset": 12,
+          "static": false,
+          "type": "VectorWS"
+        },
+        "m_vMinBounds": {
+          "offset": 0,
+          "static": false,
+          "type": "VectorWS"
+        }
+      },
+      "parent": ""
+    },
+    "AABB_t": {
+      "fields": {
+        "m_vMaxBounds": {
+          "offset": 12,
+          "static": false,
+          "type": "Vector"
+        },
+        "m_vMinBounds": {
+          "offset": 0,
+          "static": false,
+          "type": "Vector"
+        }
+      },
+      "parent": ""
+    },
+    "CFuseProgram": {
+      "fields": {
+        "m_nMaxTempVarsUsed": {
+          "offset": 72,
+          "static": false,
+          "type": "int32"
+        },
+        "m_programBuffer": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlVector<uint8>"
+        },
+        "m_variablesRead": {
+          "offset": 24,
+          "static": false,
+          "type": "CUtlVector<FuseVariableIndex_t>"
+        },
+        "m_variablesWritten": {
+          "offset": 48,
+          "static": false,
+          "type": "CUtlVector<FuseVariableIndex_t>"
+        }
+      },
+      "parent": ""
+    },
+    "CFuseSymbolTable": {
+      "fields": {
+        "m_constantMap": {
+          "offset": 72,
+          "static": false,
+          "type": "CUtlHashtable<CUtlStringToken,int32>"
+        },
+        "m_constants": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlVector<ConstantInfo_t>"
+        },
+        "m_functionMap": {
+          "offset": 136,
+          "static": false,
+          "type": "CUtlHashtable<CUtlStringToken,int32>"
+        },
+        "m_functions": {
+          "offset": 48,
+          "static": false,
+          "type": "CUtlVector<FunctionInfo_t>"
+        },
+        "m_variableMap": {
+          "offset": 104,
+          "static": false,
+          "type": "CUtlHashtable<CUtlStringToken,int32>"
+        },
+        "m_variables": {
+          "offset": 24,
+          "static": false,
+          "type": "CUtlVector<VariableInfo_t>"
+        }
+      },
+      "parent": ""
+    },
+    "ConstantInfo_t": {
+      "fields": {
+        "m_flValue": {
+          "offset": 12,
+          "static": false,
+          "type": "float32"
+        },
+        "m_name": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlString"
+        },
+        "m_nameToken": {
+          "offset": 8,
+          "static": false,
+          "type": "CUtlStringToken"
+        }
+      },
+      "parent": ""
+    },
+    "FourQuaternions": {
+      "fields": {
+        "w": {
+          "offset": 48,
+          "static": false,
+          "type": "fltx4"
+        },
+        "x": {
+          "offset": 0,
+          "static": false,
+          "type": "fltx4"
+        },
+        "y": {
+          "offset": 16,
+          "static": false,
+          "type": "fltx4"
+        },
+        "z": {
+          "offset": 32,
+          "static": false,
+          "type": "fltx4"
+        }
+      },
+      "parent": ""
+    },
+    "FunctionInfo_t": {
+      "fields": {
+        "m_bIsPure": {
+          "offset": 26,
+          "static": false,
+          "type": "bool"
+        },
+        "m_nIndex": {
+          "offset": 24,
+          "static": false,
+          "type": "FuseFunctionIndex_t"
+        },
+        "m_nParamCount": {
+          "offset": 20,
+          "static": false,
+          "type": "int32"
+        },
+        "m_name": {
+          "offset": 8,
+          "static": false,
+          "type": "CUtlString"
+        },
+        "m_nameToken": {
+          "offset": 16,
+          "static": false,
+          "type": "CUtlStringToken"
+        }
+      },
+      "parent": ""
+    },
+    "FuseFunctionIndex_t": {
+      "fields": {
+        "m_Value": {
+          "offset": 0,
+          "static": false,
+          "type": "uint16"
+        }
+      },
+      "parent": ""
+    },
+    "FuseVariableIndex_t": {
+      "fields": {
+        "m_Value": {
+          "offset": 0,
+          "static": false,
+          "type": "uint16"
+        }
+      },
+      "parent": ""
+    },
+    "InfoForResourceTypeCAnimData": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCAnimationGroup": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCCSGOEconItem": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCChoreoSceneResource": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCCompositeMaterialKit": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCDOTANovelsList": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCDOTAPatchNotesList": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCDotaItemDefinitionResource": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCEntityLump": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCGcExportableExternalData": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCJavaScriptResource": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCModel": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCMorphSetData": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCNmClip": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCNmGraphDefinition": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCNmSkeleton": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCPanoramaDynamicImages": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCPanoramaLayout": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCPanoramaStyle": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCPhysAggregateData": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCPostProcessingResource": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCRenderMesh": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCResponseRulesList": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCSequenceGroupData": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCSmartProp": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCSurfaceGraph": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCTestResourceData": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCTextureBase": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCTypeScriptResource": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCVDataItemDefs": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCVDataResource": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCVMixListResource": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCVPhysXSurfacePropertiesList": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCVSoundEventScriptList": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCVSoundStackScriptList": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCVoiceContainerBase": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCVoxelVisibility": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeCWorldNode": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeIAnimGraphModelBinding": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeIMaterial2": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeIParticleSnapshot": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeIParticleSystemDefinition": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeIPulseGraphDef": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeIVectorGraphic": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeManifestTestResource_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeProceduralTestResource_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "InfoForResourceTypeWorld_t": {
+      "fields": {},
+      "parent": ""
+    },
+    "ManifestTestResource_t": {
+      "fields": {
+        "m_child": {
+          "offset": 8,
+          "static": false,
+          "type": "CStrongHandle<InfoForResourceTypeManifestTestResource_t>"
+        },
+        "m_name": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlString"
+        }
+      },
+      "parent": ""
+    },
+    "PackedAABB_t": {
+      "fields": {
+        "m_nPackedMax": {
+          "offset": 4,
+          "static": false,
+          "type": "uint32"
+        },
+        "m_nPackedMin": {
+          "offset": 0,
+          "static": false,
+          "type": "uint32"
+        }
+      },
+      "parent": ""
+    },
+    "VariableInfo_t": {
+      "fields": {
+        "m_eAccess": {
+          "offset": 16,
+          "static": false,
+          "type": "FuseVariableAccess_t"
+        },
+        "m_eVarType": {
+          "offset": 15,
+          "static": false,
+          "type": "FuseVariableType_t"
+        },
+        "m_nIndex": {
+          "offset": 12,
+          "static": false,
+          "type": "FuseVariableIndex_t"
+        },
+        "m_nNumComponents": {
+          "offset": 14,
+          "static": false,
+          "type": "uint8"
+        },
+        "m_name": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlString"
+        },
+        "m_nameToken": {
+          "offset": 8,
+          "static": false,
+          "type": "CUtlStringToken"
+        }
+      },
+      "parent": ""
+    }
+  },
+  "enums": {
+    "FuseVariableAccess_t": {
+      "alignment": 1,
+      "members": {
+        "READ_ONLY": 1,
+        "WRITABLE": 0
+      }
+    },
+    "FuseVariableType_t": {
+      "alignment": 1,
+      "members": {
+        "BOOL": 1,
+        "FLOAT32": 8,
+        "INT16": 3,
+        "INT32": 4,
+        "INT8": 2,
+        "INVALID": 0,
+        "UINT16": 6,
+        "UINT32": 7,
+        "UINT8": 5
+      }
+    }
+  },
+  "module": "resourcesystem.dll"
+}

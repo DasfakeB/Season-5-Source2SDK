@@ -1,0 +1,1373 @@
+{
+  "classes": {
+    "CBasePulseGraphInstance": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseArraylib": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Base": {
+      "fields": {
+        "m_nEditorNodeID": {
+          "offset": 8,
+          "static": false,
+          "type": "PulseDocNodeID_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_BaseFlow": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_BaseLerp": {
+      "fields": {
+        "m_WakeResume": {
+          "offset": 216,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_BaseLerp::CursorState_t": {
+      "fields": {
+        "m_EndTime": {
+          "offset": 4,
+          "static": false,
+          "type": "GameTime_t"
+        },
+        "m_StartTime": {
+          "offset": 0,
+          "static": false,
+          "type": "GameTime_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_BaseRequirement": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_BaseState": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_BaseValue": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_BaseYieldingInflow": {
+      "fields": {
+        "m_BaseFlow_OnAfterCancel": {
+          "offset": 72,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        },
+        "m_BaseFlow_WhileActive": {
+          "offset": 144,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_BooleanSwitchState": {
+      "fields": {
+        "m_Condition": {
+          "offset": 216,
+          "static": false,
+          "type": "CPulseObservableExpression<bool>"
+        },
+        "m_WhenFalse": {
+          "offset": 408,
+          "static": false,
+          "type": "CPulse_OutflowConnection"
+        },
+        "m_WhenTrue": {
+          "offset": 336,
+          "static": false,
+          "type": "CPulse_OutflowConnection"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_CursorQueue": {
+      "fields": {
+        "m_nCursorsAllowedToRunParallel": {
+          "offset": 296,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_ExampleCriteria": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_ExampleCriteria::Criteria_t": {
+      "fields": {
+        "m_bMyBool": {
+          "offset": 8,
+          "static": false,
+          "type": "bool"
+        },
+        "m_flFloatValue1": {
+          "offset": 0,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flFloatValue2": {
+          "offset": 4,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_ExampleSelector": {
+      "fields": {
+        "m_OutflowList": {
+          "offset": 72,
+          "static": false,
+          "type": "PulseSelectorOutflowList_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_FireCursors": {
+      "fields": {
+        "m_OnFinished": {
+          "offset": 248,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        },
+        "m_Outflows": {
+          "offset": 216,
+          "static": false,
+          "type": "CUtlVector<CPulse_OutflowConnection>"
+        },
+        "m_bWaitForChildOutflows": {
+          "offset": 240,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Inflow_BaseEntrypoint": {
+      "fields": {
+        "m_EntryChunk": {
+          "offset": 72,
+          "static": false,
+          "type": "PulseRuntimeChunkIndex_t"
+        },
+        "m_RegisterMap": {
+          "offset": 80,
+          "static": false,
+          "type": "PulseRegisterMap_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Inflow_EntOutputHandler": {
+      "fields": {
+        "m_ExpectedParamType": {
+          "offset": 160,
+          "static": false,
+          "type": "CPulseValueFullType"
+        },
+        "m_SourceEntity": {
+          "offset": 128,
+          "static": false,
+          "type": "PulseSymbol_t"
+        },
+        "m_SourceOutput": {
+          "offset": 144,
+          "static": false,
+          "type": "PulseSymbol_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Inflow_EventHandler": {
+      "fields": {
+        "m_EventName": {
+          "offset": 128,
+          "static": false,
+          "type": "PulseSymbol_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Inflow_GraphHook": {
+      "fields": {
+        "m_HookName": {
+          "offset": 128,
+          "static": false,
+          "type": "PulseSymbol_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Inflow_Method": {
+      "fields": {
+        "m_Args": {
+          "offset": 184,
+          "static": false,
+          "type": "CUtlLeanVector<CPulseRuntimeMethodArg>"
+        },
+        "m_Description": {
+          "offset": 144,
+          "static": false,
+          "type": "CUtlString"
+        },
+        "m_MethodName": {
+          "offset": 128,
+          "static": false,
+          "type": "PulseSymbol_t"
+        },
+        "m_ReturnType": {
+          "offset": 160,
+          "static": false,
+          "type": "CPulseValueFullType"
+        },
+        "m_bIsPublic": {
+          "offset": 152,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Inflow_ObservableVariableListener": {
+      "fields": {
+        "m_bSelfReference": {
+          "offset": 130,
+          "static": false,
+          "type": "bool"
+        },
+        "m_nBlackboardReference": {
+          "offset": 128,
+          "static": false,
+          "type": "PulseRuntimeBlackboardReferenceIndex_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Inflow_Wait": {
+      "fields": {
+        "m_WakeResume": {
+          "offset": 216,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Inflow_Yield": {
+      "fields": {
+        "m_UnyieldResume": {
+          "offset": 216,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_InlineNodeSkipSelector": {
+      "fields": {
+        "m_FailOutflow": {
+          "offset": 104,
+          "static": false,
+          "type": "CPulse_OutflowConnection"
+        },
+        "m_PassOutflow": {
+          "offset": 80,
+          "static": false,
+          "type": "PulseSelectorOutflowList_t"
+        },
+        "m_bAnd": {
+          "offset": 76,
+          "static": false,
+          "type": "bool"
+        },
+        "m_nFlowNodeID": {
+          "offset": 72,
+          "static": false,
+          "type": "PulseDocNodeID_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_IntervalTimer": {
+      "fields": {
+        "m_Completed": {
+          "offset": 216,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        },
+        "m_OnInterval": {
+          "offset": 288,
+          "static": false,
+          "type": "SignatureOutflow_Continue"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_IntervalTimer::CursorState_t": {
+      "fields": {
+        "m_EndTime": {
+          "offset": 4,
+          "static": false,
+          "type": "GameTime_t"
+        },
+        "m_StartTime": {
+          "offset": 0,
+          "static": false,
+          "type": "GameTime_t"
+        },
+        "m_bCompleteOnNextWake": {
+          "offset": 16,
+          "static": false,
+          "type": "bool"
+        },
+        "m_flWaitInterval": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flWaitIntervalHigh": {
+          "offset": 12,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_IsRequirementValid": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_IsRequirementValid::Criteria_t": {
+      "fields": {
+        "m_bIsValid": {
+          "offset": 0,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_LimitCount": {
+      "fields": {
+        "m_nLimitCount": {
+          "offset": 72,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_LimitCount::Criteria_t": {
+      "fields": {
+        "m_bLimitCountPasses": {
+          "offset": 0,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_LimitCount::InstanceState_t": {
+      "fields": {
+        "m_nCurrentCount": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Outflow_CycleOrdered": {
+      "fields": {
+        "m_Outputs": {
+          "offset": 72,
+          "static": false,
+          "type": "CUtlVector<CPulse_OutflowConnection>"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Outflow_CycleOrdered::InstanceState_t": {
+      "fields": {
+        "m_nNextIndex": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Outflow_CycleRandom": {
+      "fields": {
+        "m_Outputs": {
+          "offset": 72,
+          "static": false,
+          "type": "CUtlVector<CPulse_OutflowConnection>"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Outflow_CycleShuffled": {
+      "fields": {
+        "m_Outputs": {
+          "offset": 72,
+          "static": false,
+          "type": "CUtlVector<CPulse_OutflowConnection>"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Outflow_CycleShuffled::InstanceState_t": {
+      "fields": {
+        "m_Shuffle": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlVectorFixedGrowable<uint8,8>"
+        },
+        "m_nNextShuffle": {
+          "offset": 32,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Outflow_TestExplicitYesNo": {
+      "fields": {
+        "m_No": {
+          "offset": 144,
+          "static": false,
+          "type": "CPulse_OutflowConnection"
+        },
+        "m_Yes": {
+          "offset": 72,
+          "static": false,
+          "type": "CPulse_OutflowConnection"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Outflow_TestRandomYesNo": {
+      "fields": {
+        "m_No": {
+          "offset": 144,
+          "static": false,
+          "type": "CPulse_OutflowConnection"
+        },
+        "m_Yes": {
+          "offset": 72,
+          "static": false,
+          "type": "CPulse_OutflowConnection"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_PickBestOutflowSelector": {
+      "fields": {
+        "m_OutflowList": {
+          "offset": 80,
+          "static": false,
+          "type": "PulseSelectorOutflowList_t"
+        },
+        "m_nCheckType": {
+          "offset": 72,
+          "static": false,
+          "type": "PulseBestOutflowRules_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Step_CallExternalMethod": {
+      "fields": {
+        "m_ExpectedArgs": {
+          "offset": 240,
+          "static": false,
+          "type": "CUtlLeanVector<CPulseRuntimeMethodArg>"
+        },
+        "m_MethodName": {
+          "offset": 216,
+          "static": false,
+          "type": "PulseSymbol_t"
+        },
+        "m_OnFinished": {
+          "offset": 264,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        },
+        "m_nAsyncCallMode": {
+          "offset": 256,
+          "static": false,
+          "type": "PulseMethodCallMode_t"
+        },
+        "m_nBlackboardIndex": {
+          "offset": 232,
+          "static": false,
+          "type": "PulseRuntimeBlackboardReferenceIndex_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Step_DebugLog": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Step_PublicOutput": {
+      "fields": {
+        "m_OutputIndex": {
+          "offset": 72,
+          "static": false,
+          "type": "PulseRuntimeOutputIndex_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Step_TestDomainCreateFakeEntity": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Step_TestDomainDestroyFakeEntity": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Step_TestDomainEntFire": {
+      "fields": {
+        "m_Input": {
+          "offset": 72,
+          "static": false,
+          "type": "CUtlString"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Step_TestDomainTracepoint": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_TestEnums": {
+      "fields": {
+        "m_nReferenceColor": {
+          "offset": 72,
+          "static": false,
+          "type": "PulseTestEnumColor_t"
+        },
+        "m_nReferenceFlags": {
+          "offset": 76,
+          "static": false,
+          "type": "PulseTestEnumFlags_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_TestWaitWithAutoTracepoints": {
+      "fields": {
+        "m_TracePrefix": {
+          "offset": 216,
+          "static": false,
+          "type": "CUtlString"
+        },
+        "m_WakeResume": {
+          "offset": 224,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_TestWaitWithCursorState": {
+      "fields": {
+        "m_WakeFail": {
+          "offset": 288,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        },
+        "m_WakeResume": {
+          "offset": 216,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_TestWaitWithCursorState::CursorState_t": {
+      "fields": {
+        "bFail": {
+          "offset": 4,
+          "static": false,
+          "type": "bool"
+        },
+        "flWaitValue": {
+          "offset": 0,
+          "static": false,
+          "type": "float32"
+        },
+        "m_hSelfCellInstance": {
+          "offset": 28,
+          "static": false,
+          "type": "HPulseCell<CPulseCell_TestWaitWithCursorState>"
+        },
+        "m_hSelfCellInstanceUntyped": {
+          "offset": 20,
+          "static": false,
+          "type": "HPulseCellBase"
+        },
+        "m_hSelfCursor": {
+          "offset": 8,
+          "static": false,
+          "type": "HYieldedCursor"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_TestWaitWithCursorState::InstanceState_t": {
+      "fields": {
+        "m_nDummy": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_TestYieldForever": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_TestYieldWithObservables": {
+      "fields": {
+        "m_LiveFloatValue": {
+          "offset": 224,
+          "static": false,
+          "type": "CPulseObservableExpression<float32>"
+        },
+        "m_LiveStringValue": {
+          "offset": 352,
+          "static": false,
+          "type": "CPulseObservableExpression<CUtlString>"
+        },
+        "m_WakeResume": {
+          "offset": 472,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        },
+        "m_WatchForStringValue": {
+          "offset": 344,
+          "static": false,
+          "type": "CUtlString"
+        },
+        "m_flWatchForFloatValue": {
+          "offset": 216,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Test_MultiInflow_NoDefault": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Test_MultiInflow_WithDefault": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Test_MultiOutflow_WithParams": {
+      "fields": {
+        "m_Out1": {
+          "offset": 72,
+          "static": false,
+          "type": "SignatureOutflow_Continue"
+        },
+        "m_Out2": {
+          "offset": 144,
+          "static": false,
+          "type": "SignatureOutflow_Continue"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Test_MultiOutflow_WithParams_Yielding": {
+      "fields": {
+        "m_AsyncChild1": {
+          "offset": 288,
+          "static": false,
+          "type": "SignatureOutflow_Continue"
+        },
+        "m_AsyncChild2": {
+          "offset": 360,
+          "static": false,
+          "type": "SignatureOutflow_Continue"
+        },
+        "m_Out1": {
+          "offset": 216,
+          "static": false,
+          "type": "SignatureOutflow_Continue"
+        },
+        "m_YieldResume1": {
+          "offset": 432,
+          "static": false,
+          "type": "SignatureOutflow_Resume"
+        },
+        "m_YieldResume2": {
+          "offset": 504,
+          "static": false,
+          "type": "SignatureOutflow_Resume"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Test_MultiOutflow_WithParams_Yielding::CursorState_t": {
+      "fields": {
+        "nTestStep": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Test_NoInflow": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Timeline": {
+      "fields": {
+        "m_OnFinished": {
+          "offset": 248,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        },
+        "m_TimelineEvents": {
+          "offset": 216,
+          "static": false,
+          "type": "CUtlVector<CPulseCell_Timeline::TimelineEvent_t>"
+        },
+        "m_bWaitForChildOutflows": {
+          "offset": 240,
+          "static": false,
+          "type": "bool"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Timeline::TimelineEvent_t": {
+      "fields": {
+        "m_EventOutflow": {
+          "offset": 8,
+          "static": false,
+          "type": "CPulse_OutflowConnection"
+        },
+        "m_flTimeFromPrevious": {
+          "offset": 0,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Unknown": {
+      "fields": {
+        "m_UnknownKeys": {
+          "offset": 72,
+          "static": false,
+          "type": "KeyValues3"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Val_TestDomainFindEntityByName": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Val_TestDomainGetEntityName": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Value_Curve": {
+      "fields": {
+        "m_Curve": {
+          "offset": 72,
+          "static": false,
+          "type": "CPiecewiseCurve"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Value_Gradient": {
+      "fields": {
+        "m_Gradient": {
+          "offset": 72,
+          "static": false,
+          "type": "CColorGradient"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_Value_RandomFloat": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Value_RandomInt": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_Value_TestValue50": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseCell_WaitForCursorsWithTag": {
+      "fields": {
+        "m_bTagSelfWhenComplete": {
+          "offset": 296,
+          "static": false,
+          "type": "bool"
+        },
+        "m_nDesiredKillPriority": {
+          "offset": 300,
+          "static": false,
+          "type": "PulseCursorCancelPriority_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_WaitForCursorsWithTagBase": {
+      "fields": {
+        "m_WaitComplete": {
+          "offset": 224,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        },
+        "m_nCursorsAllowedToWait": {
+          "offset": 216,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCell_WaitForObservable": {
+      "fields": {
+        "m_Condition": {
+          "offset": 216,
+          "static": false,
+          "type": "CPulseObservableExpression<bool>"
+        },
+        "m_OnTrue": {
+          "offset": 336,
+          "static": false,
+          "type": "CPulse_ResumePoint"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseCursorFuncs": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseEnumlib": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseExecCursor": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseGraphDef": {
+      "fields": {
+        "m_BlackboardReferences": {
+          "offset": 272,
+          "static": false,
+          "type": "CUtlVector<CPulse_BlackboardReference>"
+        },
+        "m_CallInfos": {
+          "offset": 200,
+          "static": false,
+          "type": "CUtlVector<CPulse_CallInfo*>"
+        },
+        "m_Cells": {
+          "offset": 104,
+          "static": false,
+          "type": "CUtlVector<CPulseCell_Base*>"
+        },
+        "m_Chunks": {
+          "offset": 80,
+          "static": false,
+          "type": "CUtlVector<CPulse_Chunk*>"
+        },
+        "m_Constants": {
+          "offset": 224,
+          "static": false,
+          "type": "CUtlVector<CPulse_Constant>"
+        },
+        "m_DomainIdentifier": {
+          "offset": 8,
+          "static": false,
+          "type": "PulseSymbol_t"
+        },
+        "m_DomainSubType": {
+          "offset": 24,
+          "static": false,
+          "type": "CPulseValueFullType"
+        },
+        "m_DomainValues": {
+          "offset": 248,
+          "static": false,
+          "type": "CUtlVector<CPulse_DomainValue>"
+        },
+        "m_InvokeBindings": {
+          "offset": 176,
+          "static": false,
+          "type": "CUtlVector<CPulse_InvokeBinding*>"
+        },
+        "m_OutputConnections": {
+          "offset": 296,
+          "static": false,
+          "type": "CUtlVector<CPulse_OutputConnection*>"
+        },
+        "m_ParentMapName": {
+          "offset": 48,
+          "static": false,
+          "type": "PulseSymbol_t"
+        },
+        "m_ParentXmlName": {
+          "offset": 64,
+          "static": false,
+          "type": "PulseSymbol_t"
+        },
+        "m_PublicOutputs": {
+          "offset": 152,
+          "static": false,
+          "type": "CUtlVector<CPulse_PublicOutput>"
+        },
+        "m_Vars": {
+          "offset": 128,
+          "static": false,
+          "type": "CUtlVector<CPulse_Variable>"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseGraphInstance_TestDomain": {
+      "fields": {
+        "m_Tracepoints": {
+          "offset": 312,
+          "static": false,
+          "type": "CUtlVector<CUtlString>"
+        },
+        "m_bExpectingCursorTerminatedDueToMaxInstructions": {
+          "offset": 300,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bExpectingToDestroyWithYieldedCursors": {
+          "offset": 298,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bExplicitTimeStepping": {
+          "offset": 297,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bIsRunningUnitTests": {
+          "offset": 296,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bQuietTracepoints": {
+          "offset": 299,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bTestYesOrNoPath": {
+          "offset": 336,
+          "static": false,
+          "type": "bool"
+        },
+        "m_nCursorsTerminatedDueToMaxInstructions": {
+          "offset": 304,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nNextValidateIndex": {
+          "offset": 308,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseGraphInstance_TestDomain_Derived": {
+      "fields": {
+        "m_nInstanceValueX": {
+          "offset": 344,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulseGraphInstance_TestDomain_FakeEntityOwner": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseGraphInstance_TestDomain_UseReadOnlyBlackboardView": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseGraphInstance_TurtleGraphics": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseMathlib": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseStringlib": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseTestFuncs_LibraryA": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseTestScriptLib": {
+      "fields": {},
+      "parent": ""
+    },
+    "CPulseTurtleGraphicsCursor": {
+      "fields": {
+        "m_Color": {
+          "offset": 216,
+          "static": false,
+          "type": "Color"
+        },
+        "m_bPenUp": {
+          "offset": 232,
+          "static": false,
+          "type": "bool"
+        },
+        "m_flHeadingDeg": {
+          "offset": 228,
+          "static": false,
+          "type": "float32"
+        },
+        "m_vPos": {
+          "offset": 220,
+          "static": false,
+          "type": "Vector2D"
+        }
+      },
+      "parent": ""
+    },
+    "CPulse_BlackboardReference": {
+      "fields": {
+        "m_BlackboardResource": {
+          "offset": 8,
+          "static": false,
+          "type": "PulseSymbol_t"
+        },
+        "m_NodeName": {
+          "offset": 32,
+          "static": false,
+          "type": "CGlobalSymbol"
+        },
+        "m_hBlackboardResource": {
+          "offset": 0,
+          "static": false,
+          "type": "CStrongHandle<InfoForResourceTypeIPulseGraphDef>"
+        },
+        "m_nNodeID": {
+          "offset": 24,
+          "static": false,
+          "type": "PulseDocNodeID_t"
+        }
+      },
+      "parent": ""
+    },
+    "CPulse_CallInfo": {
+      "fields": {
+        "m_CallMethodID": {
+          "offset": 72,
+          "static": false,
+          "type": "PulseDocNodeID_t"
+        },
+        "m_PortName": {
+          "offset": 0,
+          "static": false,
+          "type": "PulseSymbol_t"
+        },
+        "m_RegisterMap": {
+          "offset": 24,
+          "static": false,
+          "type": "PulseRegisterMap_t"
+        },
+        "m_nEditorNodeID": {
+          "offset": 16,
+          "static": false,
+          "type": "PulseDocNodeID_t"
+        },
+        "m_nSrcChunk": {
+          "offset": 76,
+          "static": false,
+          "type": "PulseRuntimeChunkIndex_t"
+        },
+        "m_nSrcInstruction": {
+          "offset": 80,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulse_InvokeBinding": {
+      "fields": {
+        "m_FuncName": {
+          "offset": 48,
+          "static": false,
+          "type": "PulseSymbol_t"
+        },
+        "m_RegisterMap": {
+          "offset": 0,
+          "static": false,
+          "type": "PulseRegisterMap_t"
+        },
+        "m_nCellIndex": {
+          "offset": 64,
+          "static": false,
+          "type": "PulseRuntimeCellIndex_t"
+        },
+        "m_nSrcChunk": {
+          "offset": 68,
+          "static": false,
+          "type": "PulseRuntimeChunkIndex_t"
+        },
+        "m_nSrcInstruction": {
+          "offset": 72,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulse_OutflowConnection": {
+      "fields": {
+        "m_OutflowRegisterMap": {
+          "offset": 24,
+          "static": false,
+          "type": "PulseRegisterMap_t"
+        },
+        "m_SourceOutflowName": {
+          "offset": 0,
+          "static": false,
+          "type": "PulseSymbol_t"
+        },
+        "m_nDestChunk": {
+          "offset": 16,
+          "static": false,
+          "type": "PulseRuntimeChunkIndex_t"
+        },
+        "m_nInstruction": {
+          "offset": 20,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "CPulse_ResumePoint": {
+      "fields": {},
+      "parent": ""
+    },
+    "CTestDomainDerived_Cursor": {
+      "fields": {
+        "m_nCursorValueA": {
+          "offset": 216,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nCursorValueB": {
+          "offset": 220,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "FakeEntityDerivedA_tAPI": {
+      "fields": {},
+      "parent": ""
+    },
+    "FakeEntityDerivedB_tAPI": {
+      "fields": {},
+      "parent": ""
+    },
+    "FakeEntity_tAPI": {
+      "fields": {},
+      "parent": ""
+    },
+    "OutflowWithRequirements_t": {
+      "fields": {
+        "m_Connection": {
+          "offset": 0,
+          "static": false,
+          "type": "CPulse_OutflowConnection"
+        },
+        "m_DestinationFlowNodeID": {
+          "offset": 72,
+          "static": false,
+          "type": "PulseDocNodeID_t"
+        },
+        "m_RequirementNodeIDs": {
+          "offset": 80,
+          "static": false,
+          "type": "CUtlVector<PulseDocNodeID_t>"
+        },
+        "m_nCursorStateBlockIndex": {
+          "offset": 104,
+          "static": false,
+          "type": "CUtlVector<int32>"
+        }
+      },
+      "parent": ""
+    },
+    "PulseNodeDynamicOutflows_t": {
+      "fields": {
+        "m_Outflows": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlVector<PulseNodeDynamicOutflows_t::DynamicOutflow_t>"
+        }
+      },
+      "parent": ""
+    },
+    "PulseNodeDynamicOutflows_t::DynamicOutflow_t": {
+      "fields": {
+        "m_Connection": {
+          "offset": 8,
+          "static": false,
+          "type": "CPulse_OutflowConnection"
+        },
+        "m_OutflowID": {
+          "offset": 0,
+          "static": false,
+          "type": "CGlobalSymbol"
+        }
+      },
+      "parent": ""
+    },
+    "PulseSelectorOutflowList_t": {
+      "fields": {
+        "m_Outflows": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlVector<OutflowWithRequirements_t>"
+        }
+      },
+      "parent": ""
+    },
+    "SignatureOutflow_Continue": {
+      "fields": {},
+      "parent": ""
+    },
+    "SignatureOutflow_Resume": {
+      "fields": {},
+      "parent": ""
+    },
+    "TestComponent_t": {
+      "fields": {
+        "m_ComponentData": {
+          "offset": 8,
+          "static": false,
+          "type": "CUtlString"
+        }
+      },
+      "parent": ""
+    },
+    "TestComponent_tAPI": {
+      "fields": {},
+      "parent": ""
+    }
+  },
+  "enums": {
+    "PulseBestOutflowRules_t": {
+      "alignment": 4,
+      "members": {
+        "SORT_BY_NUMBER_OF_VALID_CRITERIA": 0,
+        "SORT_BY_OUTFLOW_INDEX": 1
+      }
+    },
+    "PulseCursorCancelPriority_t": {
+      "alignment": 4,
+      "members": {
+        "CancelOnSucceeded": 1,
+        "HardCancel": 3,
+        "None": 0,
+        "SoftCancel": 2
+      }
+    },
+    "PulseCursorWakePriority_t": {
+      "alignment": 4,
+      "members": {
+        "WakeElegantly": 0,
+        "WakeImmediate": 1
+      }
+    },
+    "PulseMethodCallMode_t": {
+      "alignment": 4,
+      "members": {
+        "ASYNC_FIRE_AND_FORGET": 1,
+        "SYNC_WAIT_FOR_COMPLETION": 0
+      }
+    },
+    "PulseTestEnumColor_t": {
+      "alignment": 4,
+      "members": {
+        "BLACK": 0,
+        "BLUE": 4,
+        "GREEN": 3,
+        "RED": 2,
+        "WHITE": 1
+      }
+    },
+    "PulseTestEnumFlagsAlt_t": {
+      "alignment": 4,
+      "members": {
+        "FIRST": 1,
+        "NONE": 0
+      }
+    },
+    "PulseTestEnumFlags_t": {
+      "alignment": 4,
+      "members": {
+        "FIRST": 1,
+        "NONE": 0,
+        "SECOND": 2,
+        "THIRD": 4
+      }
+    },
+    "PulseTestEnumShape_t": {
+      "alignment": 4,
+      "members": {
+        "CIRCLE": 100,
+        "SQUARE": 200,
+        "TRIANGLE": 300
+      }
+    }
+  },
+  "module": "pulse_system.dll"
+}

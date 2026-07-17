@@ -1,0 +1,574 @@
+{
+  "classes": {
+    "MaterialParamBuffer_t": {
+      "fields": {
+        "m_value": {
+          "offset": 8,
+          "static": false,
+          "type": "CUtlBinaryBlock"
+        }
+      },
+      "parent": ""
+    },
+    "MaterialParamFloat_t": {
+      "fields": {
+        "m_flValue": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "MaterialParamInt_t": {
+      "fields": {
+        "m_nValue": {
+          "offset": 8,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "MaterialParamString_t": {
+      "fields": {
+        "m_value": {
+          "offset": 8,
+          "static": false,
+          "type": "CUtlString"
+        }
+      },
+      "parent": ""
+    },
+    "MaterialParamTexture_t": {
+      "fields": {
+        "m_pValue": {
+          "offset": 8,
+          "static": false,
+          "type": "CStrongHandle<InfoForResourceTypeCTextureBase>"
+        }
+      },
+      "parent": ""
+    },
+    "MaterialParamVector_t": {
+      "fields": {
+        "m_value": {
+          "offset": 8,
+          "static": false,
+          "type": "Vector4D"
+        }
+      },
+      "parent": ""
+    },
+    "MaterialParam_t": {
+      "fields": {
+        "m_name": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlString"
+        }
+      },
+      "parent": ""
+    },
+    "MaterialResourceData_t": {
+      "fields": {
+        "m_dynamicParams": {
+          "offset": 112,
+          "static": false,
+          "type": "CUtlVector<MaterialParamBuffer_t>"
+        },
+        "m_dynamicTextureParams": {
+          "offset": 136,
+          "static": false,
+          "type": "CUtlVector<MaterialParamBuffer_t>"
+        },
+        "m_floatAttributes": {
+          "offset": 184,
+          "static": false,
+          "type": "CUtlVector<MaterialParamFloat_t>"
+        },
+        "m_floatParams": {
+          "offset": 40,
+          "static": false,
+          "type": "CUtlVector<MaterialParamFloat_t>"
+        },
+        "m_intAttributes": {
+          "offset": 160,
+          "static": false,
+          "type": "CUtlVector<MaterialParamInt_t>"
+        },
+        "m_intParams": {
+          "offset": 16,
+          "static": false,
+          "type": "CUtlVector<MaterialParamInt_t>"
+        },
+        "m_materialName": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlString"
+        },
+        "m_renderAttributesUsed": {
+          "offset": 280,
+          "static": false,
+          "type": "CUtlVector<CUtlString>"
+        },
+        "m_shaderName": {
+          "offset": 8,
+          "static": false,
+          "type": "CUtlString"
+        },
+        "m_stringAttributes": {
+          "offset": 256,
+          "static": false,
+          "type": "CUtlVector<MaterialParamString_t>"
+        },
+        "m_textureAttributes": {
+          "offset": 232,
+          "static": false,
+          "type": "CUtlVector<MaterialParamTexture_t>"
+        },
+        "m_textureParams": {
+          "offset": 88,
+          "static": false,
+          "type": "CUtlVector<MaterialParamTexture_t>"
+        },
+        "m_vectorAttributes": {
+          "offset": 208,
+          "static": false,
+          "type": "CUtlVector<MaterialParamVector_t>"
+        },
+        "m_vectorParams": {
+          "offset": 64,
+          "static": false,
+          "type": "CUtlVector<MaterialParamVector_t>"
+        }
+      },
+      "parent": ""
+    },
+    "PostProcessingBloomParameters_t": {
+      "fields": {
+        "m_blendMode": {
+          "offset": 0,
+          "static": false,
+          "type": "BloomBlendMode_t"
+        },
+        "m_flBloomStartValue": {
+          "offset": 28,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flBloomStrength": {
+          "offset": 4,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flBloomThreshold": {
+          "offset": 16,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flBloomThresholdWidth": {
+          "offset": 20,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flBlurBloomStrength": {
+          "offset": 12,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flBlurWeight": {
+          "offset": 56,
+          "static": false,
+          "type": "float32[5]"
+        },
+        "m_flComputeBloomEffectsScale": {
+          "offset": 44,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flComputeBloomLensDirtBlackLevel": {
+          "offset": 52,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flComputeBloomLensDirtStrength": {
+          "offset": 48,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flComputeBloomRadius": {
+          "offset": 40,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flComputeBloomStrength": {
+          "offset": 32,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flComputeBloomThreshold": {
+          "offset": 36,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flScreenBloomStrength": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flSkyboxBloomStrength": {
+          "offset": 24,
+          "static": false,
+          "type": "float32"
+        },
+        "m_vBlurTint": {
+          "offset": 76,
+          "static": false,
+          "type": "Vector[5]"
+        }
+      },
+      "parent": ""
+    },
+    "PostProcessingFogScatteringParameters_t": {
+      "fields": {
+        "m_fCubemapScale": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        },
+        "m_fGradientScale": {
+          "offset": 16,
+          "static": false,
+          "type": "float32"
+        },
+        "m_fRadius": {
+          "offset": 0,
+          "static": false,
+          "type": "float32"
+        },
+        "m_fScale": {
+          "offset": 4,
+          "static": false,
+          "type": "float32"
+        },
+        "m_fVolumetricScale": {
+          "offset": 12,
+          "static": false,
+          "type": "float32"
+        },
+        "m_fWaterDensity": {
+          "offset": 24,
+          "static": false,
+          "type": "float32"
+        },
+        "m_fWaterDepthBlurRadius": {
+          "offset": 28,
+          "static": false,
+          "type": "float32"
+        },
+        "m_fWaterScale": {
+          "offset": 20,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "PostProcessingLocalContrastParameters_t": {
+      "fields": {
+        "m_flLocalContrastEdgeStrength": {
+          "offset": 4,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flLocalContrastStrength": {
+          "offset": 0,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flLocalContrastVignetteBlur": {
+          "offset": 16,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flLocalContrastVignetteEnd": {
+          "offset": 12,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flLocalContrastVignetteStart": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "PostProcessingLocalExposureParameters_t": {
+      "fields": {
+        "m_fBoostLocalContrast": {
+          "offset": 12,
+          "static": false,
+          "type": "float32"
+        },
+        "m_fHighlightOffsetEV": {
+          "offset": 4,
+          "static": false,
+          "type": "float32"
+        },
+        "m_fShadowOffsetEV": {
+          "offset": 0,
+          "static": false,
+          "type": "float32"
+        },
+        "m_fSigma": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "PostProcessingResource_t": {
+      "fields": {
+        "m_bHasBloomParams": {
+          "offset": 64,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bHasColorCorrection": {
+          "offset": 288,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bHasFogScatteringParams": {
+          "offset": 289,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bHasLocalContrastParams": {
+          "offset": 244,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bHasLocalExposureParams": {
+          "offset": 324,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bHasTonemapParams": {
+          "offset": 0,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bHasVignetteParams": {
+          "offset": 204,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bloomParams": {
+          "offset": 68,
+          "static": false,
+          "type": "PostProcessingBloomParameters_t"
+        },
+        "m_colorCorrectionVolumeData": {
+          "offset": 272,
+          "static": false,
+          "type": "CUtlBinaryBlock"
+        },
+        "m_fogScatteringParams": {
+          "offset": 292,
+          "static": false,
+          "type": "PostProcessingFogScatteringParameters_t"
+        },
+        "m_localConstrastParams": {
+          "offset": 248,
+          "static": false,
+          "type": "PostProcessingLocalContrastParameters_t"
+        },
+        "m_localExposureParams": {
+          "offset": 328,
+          "static": false,
+          "type": "PostProcessingLocalExposureParameters_t"
+        },
+        "m_nColorCorrectionVolumeDim": {
+          "offset": 268,
+          "static": false,
+          "type": "int32"
+        },
+        "m_toneMapParams": {
+          "offset": 4,
+          "static": false,
+          "type": "PostProcessingTonemapParameters_t"
+        },
+        "m_vignetteParams": {
+          "offset": 208,
+          "static": false,
+          "type": "PostProcessingVignetteParameters_t"
+        }
+      },
+      "parent": ""
+    },
+    "PostProcessingTonemapParameters_t": {
+      "fields": {
+        "m_flExposureBias": {
+          "offset": 0,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flExposureBiasHighlights": {
+          "offset": 40,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flExposureBiasShadows": {
+          "offset": 36,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flLinearAngle": {
+          "offset": 12,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flLinearStrength": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flLuminanceSource": {
+          "offset": 32,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flMaxHighlightLum": {
+          "offset": 56,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flMaxShadowLum": {
+          "offset": 48,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flMinHighlightLum": {
+          "offset": 52,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flMinShadowLum": {
+          "offset": 44,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flShoulderStrength": {
+          "offset": 4,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flToeDenom": {
+          "offset": 24,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flToeNum": {
+          "offset": 20,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flToeStrength": {
+          "offset": 16,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flWhitePoint": {
+          "offset": 28,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "PostProcessingVignetteParameters_t": {
+      "fields": {
+        "m_flFeather": {
+          "offset": 20,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flRadius": {
+          "offset": 12,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flRoundness": {
+          "offset": 16,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flVignetteStrength": {
+          "offset": 0,
+          "static": false,
+          "type": "float32"
+        },
+        "m_vCenter": {
+          "offset": 4,
+          "static": false,
+          "type": "Vector2D"
+        },
+        "m_vColorTint": {
+          "offset": 24,
+          "static": false,
+          "type": "Vector"
+        }
+      },
+      "parent": ""
+    }
+  },
+  "enums": {
+    "BloomBlendMode_t": {
+      "alignment": 4,
+      "members": {
+        "BLOOM_BLEND_ADD": 0,
+        "BLOOM_BLEND_BLUR": 2,
+        "BLOOM_BLEND_SCREEN": 1
+      }
+    },
+    "HorizJustification_e": {
+      "alignment": 4,
+      "members": {
+        "HORIZ_JUSTIFICATION_CENTER": 1,
+        "HORIZ_JUSTIFICATION_LEFT": 0,
+        "HORIZ_JUSTIFICATION_NONE": 3,
+        "HORIZ_JUSTIFICATION_RIGHT": 2
+      }
+    },
+    "LayoutPositionType_e": {
+      "alignment": 4,
+      "members": {
+        "LAYOUTPOSITIONTYPE_FRACTIONAL": 1,
+        "LAYOUTPOSITIONTYPE_NONE": 2,
+        "LAYOUTPOSITIONTYPE_VIEWPORT_RELATIVE": 0
+      }
+    },
+    "VertJustification_e": {
+      "alignment": 4,
+      "members": {
+        "VERT_JUSTIFICATION_BOTTOM": 2,
+        "VERT_JUSTIFICATION_CENTER": 1,
+        "VERT_JUSTIFICATION_NONE": 3,
+        "VERT_JUSTIFICATION_TOP": 0
+      }
+    },
+    "ViewFadeMode_t": {
+      "alignment": 4,
+      "members": {
+        "VIEW_FADE_CONSTANT_COLOR": 0,
+        "VIEW_FADE_MOD2X": 2,
+        "VIEW_FADE_MODULATE": 1
+      }
+    }
+  },
+  "module": "materialsystem2.dll"
+}

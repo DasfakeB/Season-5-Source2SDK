@@ -1,0 +1,471 @@
+{
+  "classes": {
+    "CSteamAudioAmbisonicsField": {
+      "fields": {
+        "m_field": {
+          "offset": 0,
+          "static": false,
+          "type": "CUtlVector<float32>"
+        }
+      },
+      "parent": ""
+    },
+    "CSteamAudioBakedDimensionsData": {
+      "fields": {
+        "m_movables": {
+          "offset": 128,
+          "static": false,
+          "type": "CSteamAudioMovableBakedData<CSteamAudioBakedDimensionsData>"
+        },
+        "m_probes": {
+          "offset": 24,
+          "static": false,
+          "type": "CSteamAudioProbeData"
+        },
+        "m_settings": {
+          "offset": 0,
+          "static": false,
+          "type": "SteamAudioCustomDataDimensionsSettings_t"
+        },
+        "m_vecInOut": {
+          "offset": 32,
+          "static": false,
+          "type": "CUtlVector<float32>"
+        },
+        "m_vecInsideSmallSizeField": {
+          "offset": 104,
+          "static": false,
+          "type": "CUtlVector<CSteamAudioAmbisonicsField>"
+        },
+        "m_vecOutsideField": {
+          "offset": 80,
+          "static": false,
+          "type": "CUtlVector<CSteamAudioAmbisonicsField>"
+        },
+        "m_vecSize": {
+          "offset": 56,
+          "static": false,
+          "type": "CUtlVector<float32>"
+        }
+      },
+      "parent": ""
+    },
+    "CSteamAudioBakedMaterialsData": {
+      "fields": {
+        "m_probes": {
+          "offset": 0,
+          "static": false,
+          "type": "CSteamAudioProbeData"
+        },
+        "m_vecMaterialTokens": {
+          "offset": 8,
+          "static": false,
+          "type": "CUtlVector<uint32>"
+        },
+        "m_vecMaterialWeights": {
+          "offset": 32,
+          "static": false,
+          "type": "CUtlVector<float32>"
+        }
+      },
+      "parent": ""
+    },
+    "CSteamAudioBakedOcclusionData": {
+      "fields": {
+        "m_probes": {
+          "offset": 16,
+          "static": false,
+          "type": "CSteamAudioProbeData"
+        },
+        "m_settings": {
+          "offset": 0,
+          "static": false,
+          "type": "SteamAudioCustomDataOcclusionSettings_t"
+        },
+        "m_vecPathingDeviation": {
+          "offset": 48,
+          "static": false,
+          "type": "CUtlVector<float32>"
+        },
+        "m_vecPathingRatio": {
+          "offset": 24,
+          "static": false,
+          "type": "CUtlVector<float32>"
+        },
+        "m_vecReflectionEnergy": {
+          "offset": 72,
+          "static": false,
+          "type": "CUtlVector<float32>"
+        }
+      },
+      "parent": ""
+    },
+    "CSteamAudioBakedPathingData": {
+      "fields": {
+        "m_movables": {
+          "offset": 16,
+          "static": false,
+          "type": "CSteamAudioMovableBakedData<CSteamAudioBakedPathingData>"
+        },
+        "m_nBands": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        },
+        "m_probes": {
+          "offset": 8,
+          "static": false,
+          "type": "CSteamAudioProbeData"
+        }
+      },
+      "parent": ""
+    },
+    "CSteamAudioBakedReverbData": {
+      "fields": {
+        "m_clusteredProbes": {
+          "offset": 160,
+          "static": false,
+          "type": "CSteamAudioProbeData"
+        },
+        "m_compressedClusteredData": {
+          "offset": 288,
+          "static": false,
+          "type": "CSteamAudioCompressedReverb"
+        },
+        "m_compressedData": {
+          "offset": 192,
+          "static": false,
+          "type": "CSteamAudioCompressedReverb"
+        },
+        "m_grid": {
+          "offset": 32,
+          "static": false,
+          "type": "CSteamAudioProbeGrid"
+        },
+        "m_movables": {
+          "offset": 384,
+          "static": false,
+          "type": "CSteamAudioMovableBakedData<CSteamAudioBakedReverbData>"
+        },
+        "m_nBands": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        },
+        "m_probes": {
+          "offset": 24,
+          "static": false,
+          "type": "CSteamAudioProbeData"
+        },
+        "m_reverbClusteringSettings": {
+          "offset": 140,
+          "static": false,
+          "type": "SteamAudioReverbClusteringSettings_t"
+        },
+        "m_reverbCompressionSettings": {
+          "offset": 152,
+          "static": false,
+          "type": "SteamAudioReverbCompressionSettings_t"
+        },
+        "m_reverbSettings": {
+          "offset": 120,
+          "static": false,
+          "type": "SteamAudioReverbSettings_t"
+        },
+        "m_scene": {
+          "offset": 8,
+          "static": false,
+          "type": "CSteamAudioSceneData"
+        },
+        "m_vecClusterForProbe": {
+          "offset": 168,
+          "static": false,
+          "type": "CUtlVector<int16>"
+        }
+      },
+      "parent": ""
+    },
+    "CSteamAudioCompressedReverb": {
+      "fields": {
+        "m_nBands": {
+          "offset": 4,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nBins": {
+          "offset": 8,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nChannels": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nProbes": {
+          "offset": 12,
+          "static": false,
+          "type": "int32"
+        },
+        "m_pCompressedData": {
+          "offset": 88,
+          "static": false,
+          "type": "IPLCompressedEnergyFields"
+        },
+        "m_vecCompressedData": {
+          "offset": 64,
+          "static": false,
+          "type": "CUtlVector<float32>"
+        },
+        "m_vecDictionary": {
+          "offset": 40,
+          "static": false,
+          "type": "CUtlVector<float32>"
+        },
+        "m_vecNumSingularValues": {
+          "offset": 16,
+          "static": false,
+          "type": "CUtlVector<int32>"
+        }
+      },
+      "parent": ""
+    },
+    "CSteamAudioProbeData": {
+      "fields": {
+        "m_pProbeBatch": {
+          "offset": 0,
+          "static": false,
+          "type": "IPLProbeBatch"
+        }
+      },
+      "parent": ""
+    },
+    "CSteamAudioProbeGrid": {
+      "fields": {
+        "m_aabb": {
+          "offset": 0,
+          "static": false,
+          "type": "AABB_t"
+        },
+        "m_flSpacing": {
+          "offset": 24,
+          "static": false,
+          "type": "float32"
+        },
+        "m_nx": {
+          "offset": 28,
+          "static": false,
+          "type": "int32"
+        },
+        "m_ny": {
+          "offset": 32,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nz": {
+          "offset": 36,
+          "static": false,
+          "type": "int32"
+        },
+        "m_vecLineSegments": {
+          "offset": 40,
+          "static": false,
+          "type": "CUtlVector<CSteamAudioProbeLineSegment>"
+        },
+        "m_vecProbes": {
+          "offset": 64,
+          "static": false,
+          "type": "CUtlVector<Vector>"
+        }
+      },
+      "parent": ""
+    },
+    "CSteamAudioProbeLineSegment": {
+      "fields": {
+        "m_vEnd": {
+          "offset": 12,
+          "static": false,
+          "type": "Vector"
+        },
+        "m_vStart": {
+          "offset": 0,
+          "static": false,
+          "type": "Vector"
+        },
+        "m_vecIntervals": {
+          "offset": 24,
+          "static": false,
+          "type": "CUtlVector<float32>"
+        },
+        "m_vecProbeIndices": {
+          "offset": 48,
+          "static": false,
+          "type": "CUtlVector<int32>"
+        }
+      },
+      "parent": ""
+    },
+    "CSteamAudioSceneData": {
+      "fields": {
+        "m_pScene": {
+          "offset": 0,
+          "static": false,
+          "type": "IPLScene"
+        },
+        "m_pStaticMesh": {
+          "offset": 8,
+          "static": false,
+          "type": "IPLStaticMesh"
+        }
+      },
+      "parent": ""
+    },
+    "SteamAudioCustomDataDimensionsSettings_t": {
+      "fields": {
+        "m_flInsideThreshold": {
+          "offset": 16,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flOutsideThreshold": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flSizeThreshold": {
+          "offset": 12,
+          "static": false,
+          "type": "float32"
+        },
+        "m_nAmbisonicsOrderInsideSizeField": {
+          "offset": 4,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nAmbisonicsOrderOutsideField": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "SteamAudioCustomDataOcclusionSettings_t": {
+      "fields": {
+        "m_bEnablePathing": {
+          "offset": 0,
+          "static": false,
+          "type": "bool"
+        },
+        "m_bEnableReflections": {
+          "offset": 1,
+          "static": false,
+          "type": "bool"
+        },
+        "m_nReflectionBounces": {
+          "offset": 8,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nReflectionRays": {
+          "offset": 4,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "SteamAudioPathSettings_t": {
+      "fields": {
+        "m_flProbePathRange": {
+          "offset": 12,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flProbeVisRadius": {
+          "offset": 4,
+          "static": false,
+          "type": "float32"
+        },
+        "m_flProbeVisThreshold": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        },
+        "m_nNumVisSamples": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "SteamAudioReverbClusteringSettings_t": {
+      "fields": {
+        "m_bEnableClustering": {
+          "offset": 0,
+          "static": false,
+          "type": "bool"
+        },
+        "m_flDepthThreshold": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        },
+        "m_nCubeMapResolution": {
+          "offset": 4,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    },
+    "SteamAudioReverbCompressionSettings_t": {
+      "fields": {
+        "m_bEnableCompression": {
+          "offset": 0,
+          "static": false,
+          "type": "bool"
+        },
+        "m_flQuality": {
+          "offset": 4,
+          "static": false,
+          "type": "float32"
+        }
+      },
+      "parent": ""
+    },
+    "SteamAudioReverbSettings_t": {
+      "fields": {
+        "m_bExportScene": {
+          "offset": 16,
+          "static": false,
+          "type": "bool"
+        },
+        "m_flIRDuration": {
+          "offset": 8,
+          "static": false,
+          "type": "float32"
+        },
+        "m_nAmbisonicsOrder": {
+          "offset": 12,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nNumBounces": {
+          "offset": 4,
+          "static": false,
+          "type": "int32"
+        },
+        "m_nNumRays": {
+          "offset": 0,
+          "static": false,
+          "type": "int32"
+        }
+      },
+      "parent": ""
+    }
+  },
+  "enums": {},
+  "module": "steamaudio.dll"
+}
